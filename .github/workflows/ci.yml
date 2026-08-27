@@ -1,6 +1,11 @@
 name: CI Pipeline
 
 on:
+  # Run CI automatically when code is pushed to main
+  push:
+    branches:
+      - main
+
   # Manual trigger for the workflow
   workflow_dispatch:
 
